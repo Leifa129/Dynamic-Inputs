@@ -1,0 +1,23 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    /* box-shadow: 4px 4px 8px 2px black; */
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #ccc;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    transition: background-color 0.4s ease-in-out;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+.InputAndValue {
+    display: flex;
+    margin: 10px;
+}
