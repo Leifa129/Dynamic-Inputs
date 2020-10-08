@@ -12,7 +12,7 @@ function Input(props) {
             break;
         case ('select'):
             inputElement = <select onChange={props.changed} className={classes.InputElement} value={props.value}>
-                {props.elementConfig.options.map(opt => <option value={opt.value}>{opt.displayValue}</option>)}
+                {props.elementConfig.options.map(opt => <option key={opt.value} value={opt.value}>{opt.displayValue}</option>)}
             </select>
             break;
         default:
